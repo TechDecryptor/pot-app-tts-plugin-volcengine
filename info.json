@@ -8,7 +8,7 @@
     { "key": "zh_cn-speaker", "display": "zh-CN Speaker" },
     { "key": "zh_tw-speaker", "display": "zh-TW Speaker" },
     { "key": "en-speaker", "display": "en-US Speaker" },
-    { "key": "ja-speaker", "display": "ja-JP Speaker" },
+    { "key": "ja-speaker", "display": "ja-JP Speaker" }
   ],
   "language": {
     "zh_cn": "zh_cn",
