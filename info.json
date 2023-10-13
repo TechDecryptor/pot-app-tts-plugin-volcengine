@@ -1,0 +1,31 @@
+{
+  "id": "[plugin].com.pot-app.lingva_tts",
+  "plugin_type": "tts",
+  "icon": "lingva.svg",
+  "display": "Lingva",
+  "homepage": "https://github.com/pot-app/pot-app-tts-plugin-template",
+  "needs": [{ "key": "requestPath", "display": "请求地址" }],
+  "language": {
+    "zh_cn": "zh",
+    "zh_tw": "zh_HANT",
+    "en": "en",
+    "ja": "ja",
+    "ko": "ko",
+    "fr": "fr",
+    "es": "es",
+    "ru": "ru",
+    "de": "de",
+    "it": "it",
+    "tr": "tr",
+    "pt": "pt",
+    "pt_br": "pt",
+    "vi": "vi",
+    "id": "id",
+    "th": "th",
+    "ms": "ms",
+    "ar": "ar",
+    "hi": "hi",
+    "mn_cy": "mn",
+    "km": "km"
+  }
+}
