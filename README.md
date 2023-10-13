@@ -21,6 +21,9 @@
 |------|----------------|
 | 嘻哈歌手 | zh_male_rap |
 | 四川女声 | zh_female_sichuan |
+| 东北男声 | tts.other.BV021_streaming |
+| 粤语男声 | tts.other.BV026_streaming |
+| 台湾女声 | tts.other.BV025_streaming |
 | 影视配音 | zh_male_xiaoming |
 | 男主播 | zh_male_zhubo |
 | 女主播 | zh_female_zhubo |
