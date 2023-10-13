@@ -6,15 +6,22 @@ use std::error::Error;
 #[no_mangle]
 pub fn tts(
     text: &str,
-    _lang: &str,
+    lang: &str,
     needs: HashMap<String, String>,
 ) -> Result<Value, Box<dyn Error>> {
     let client = reqwest::blocking::ClientBuilder::new().build()?;
 
     let url = "https://translate.volcengine.com/crx/tts/v1/";
-    let speaker = match needs.get("speaker") {
-        Some(v) => v,
-        None => "zh_male_xiaoming",
+
+    let speaker = match needs.get(&format!("{lang}-speaker")) {
+        Some(speaker) => speaker,
+        None => match lang {
+            "zh_cn" => "zh_male_xiaoming".to_string(),
+            "zh_tw" => "zh_male_xiaoming".to_string(),
+            "en" => "en_male_adam".to_string(),
+            "ja" => "jp_male_satoshi".to_string(),
+            _ => return Err("Language not supported".into()),
+        },
     };
     let res:Value = client
         .post(url)
@@ -58,8 +65,8 @@ mod tests {
     #[test]
     fn try_request() {
         let mut needs = HashMap::new();
-        needs.insert("speaker".to_string(), "zh_male_rap".to_string());
-        let result = tts("你好", "zh", needs).unwrap();
+        needs.insert("zh_cn-speaker".to_string(), "zh_male_rap".to_string());
+        let result = tts("你好", "zh_cn", needs).unwrap();
         println!("{result}");
     }
 }
