@@ -14,7 +14,7 @@ pub fn tts(
     let url = "https://translate.volcengine.com/crx/tts/v1/";
 
     let speaker = match needs.get(&format!("{lang}-speaker")) {
-        Some(speaker) => speaker,
+        Some(speaker) => speaker.to_string(),
         None => match lang {
             "zh_cn" => "zh_male_xiaoming".to_string(),
             "zh_tw" => "zh_male_xiaoming".to_string(),
