@@ -74,3 +74,54 @@
 |------|----------------|
 | 西语男声 | es_male_george |
 | 西语女声 | tts.other.BV065_streaming |
+
+### Russian
+
+| Name |      Value     |
+|------|----------------|
+| 俄语女声 | tts.other.BV068_streaming |
+
+### Italian
+
+| Name |      Value     |
+|------|----------------|
+| 意语男声 | tts.other.BV087_streaming |
+
+### Turkish
+
+| Name |      Value     |
+|------|----------------|
+| 土耳其男声 | tts.other.BV083_streaming |
+
+### Portuguese | Portuguese(Brazil)
+
+| Name |      Value     |
+|------|----------------|
+| 葡语男声 | tts.other.BV531_streaming |
+| 葡语女声 | pt_female_alice |
+
+### Vietnamese
+
+| Name |      Value     |
+|------|----------------|
+| 越南男声 | tts.other.BV075_streaming |
+| 越南女声 | tts.other.BV074_streaming |
+
+### Malay
+
+| Name |      Value     |
+|------|----------------|
+| 马来女声 | tts.other.BV092_streaming |
+
+### Arabic 
+
+| Name |      Value     |
+|------|----------------|
+| 阿语男声 | tts.other.BV570_streaming |
+
+### Indonesian 
+
+| Name |      Value     |
+|------|----------------|
+| 印尼男声 | tts.other.BV160_streaming |
+| 印尼女声 | id_female_noor |
