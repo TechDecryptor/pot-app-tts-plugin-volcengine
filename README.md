@@ -35,7 +35,10 @@
 | Name |      Value     |
 |------|----------------|
 | 美式男声 | en_male_adam |
+| 美式女声 | tts.other.BV027_streaming |
 | 英式男声 | en_male_bob |
+| 英式女声 | tts.other.BV032_TOBI_streaming |
+| 澳洲男声 | tts.other.BV516_streaming |
 | 澳洲女声 | en_female_sarah |
 
 ### Japanese
@@ -44,3 +47,30 @@
 |------|----------------|
 | 日语男声 | jp_male_satoshi |
 | 日语女声 | jp_female_mai |
+
+### Korean
+
+| Name |      Value     |
+|------|----------------|
+| 韩语男声 | kr_male_gye |
+| 韩语女声 | tts.other.BV059_streaming |
+
+### French
+
+| Name |      Value     |
+|------|----------------|
+| 法语男声 | fr_male_enzo |
+| 法语女声 | tts.other.BV078_streaming |
+
+### German
+
+| Name |      Value     |
+|------|----------------|
+| 德语女声 | de_female_sophie |
+
+### Spanish
+
+| Name |      Value     |
+|------|----------------|
+| 西语男声 | es_male_george |
+| 西语女声 | tts.other.BV065_streaming |
