@@ -5,23 +5,173 @@
   "display": "火山 TTS",
   "homepage": "https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine",
   "needs": [
-    { "key": "zh_cn-speaker", "display": "Simp Chinese Speaker" },
-    { "key": "zh_tw-speaker", "display": "Trad Chinese Speaker" },
-    { "key": "en-speaker", "display": "English Speaker" },
-    { "key": "ja-speaker", "display": "Japanese Speaker" },
-    { "key": "ko-speaker", "display": "Korean Speaker" },
-    { "key": "fr-speaker", "display": "French Speaker" },
-    { "key": "es-speaker", "display": "Spanish Speaker" },
-    { "key": "ru-speaker", "display": "Russian Speaker" },
-    { "key": "de-speaker", "display": "German Speaker" },
-    { "key": "it-speaker", "display": "Italian Speaker" },
-    { "key": "tr-speaker", "display": "Turkish Speaker" },
-    { "key": "pt_pt-speaker", "display": "Portuguese Speaker" },
-    { "key": "pt_br-speaker", "display": "Portuguese(Brazil) Speaker" },
-    { "key": "vi-speaker", "display": "Vietnamese Speaker" },
-    { "key": "ms-speaker", "display": "Malay Speaker" },
-    { "key": "ar-speaker", "display": "Arabic Speaker" },
-    { "key": "hi-speaker", "display": "Indonesian Speaker" }
+    {
+      "key": "zh_cn-speaker",
+      "display": "简体中文发音",
+      "type": "select",
+      "options": {
+        "zh_male_rap": "嘻哈歌手",
+        "zh_female_sichuan": "四川女声",
+        "tts.other.BV021_streaming": "东北男声",
+        "tts.other.BV026_streaming": "粤语男声",
+        "tts.other.BV025_streaming": "台湾女声",
+        "zh_male_xiaoming": "影视配音",
+        "zh_male_zhubo": "男主播",
+        "zh_female_zhubo": "女主播",
+        "zh_female_qingxin": "清新女声",
+        "zh_female_story": "少儿故事"
+      }
+    },
+    {
+      "key": "zh_tw-speaker",
+      "display": "繁体中文发音",
+      "type": "select",
+      "options": {
+        "zh_male_rap": "嘻哈歌手",
+        "zh_female_sichuan": "四川女声",
+        "tts.other.BV021_streaming": "东北男声",
+        "tts.other.BV026_streaming": "粤语男声",
+        "tts.other.BV025_streaming": "台湾女声",
+        "zh_male_xiaoming": "影视配音",
+        "zh_male_zhubo": "男主播",
+        "zh_female_zhubo": "女主播",
+        "zh_female_qingxin": "清新女声",
+        "zh_female_story": "少儿故事"
+      }
+    },
+    {
+      "key": "en-speaker",
+      "display": "英语发音",
+      "type": "select",
+      "options": {
+        "en_male_adam": "美式男声",
+        "tts.other.BV027_streaming": "美式女声",
+        "en_male_bob": "英式男声",
+        "tts.other.BV032_TOBI_streaming": "英式女声",
+        "tts.other.BV516_streaming": "澳洲男声",
+        "en_female_sarah": "澳洲女声"
+      }
+    },
+    {
+      "key": "ja-speaker",
+      "display": "日语发音",
+      "type": "select",
+      "options": {
+        "jp_male_satoshi": "日语男声",
+        "jp_female_mai": "日语女声"
+      }
+    },
+    {
+      "key": "ko-speaker",
+      "display": "韩语发音",
+      "type": "select",
+      "options": {
+        "kr_male_gye": "韩语男声",
+        "tts.other.BV059_streaming": "韩语女声"
+      }
+    },
+    {
+      "key": "fr-speaker",
+      "display": "法语发音",
+      "type": "select",
+      "options": {
+        "fr_male_enzo": "法语男声",
+        "tts.other.BV078_streaming": "法语女声"
+      }
+    },
+    {
+      "key": "es-speaker",
+      "display": "西班牙语发音",
+      "type": "select",
+      "options": {
+        "es_male_george": "西语男声",
+        "tts.other.BV065_streaming": "西语女声"
+      }
+    },
+    {
+      "key": "ru-speaker",
+      "display": "俄语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV068_streaming": "俄语女声"
+      }
+    },
+    {
+      "key": "de-speaker",
+      "display": "德语发音",
+      "type": "select",
+      "options": {
+        "de_female_sophie": "德语女声"
+      }
+    },
+    {
+      "key": "it-speaker",
+      "display": "意大利语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV087_streaming": "意语男声"
+      }
+    },
+    {
+      "key": "tr-speaker",
+      "display": "土耳其语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV083_streaming": "土耳其男声"
+      }
+    },
+    {
+      "key": "pt_pt-speaker",
+      "display": "葡萄牙语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV531_streaming": "葡语男声",
+        "pt_female_alice": "葡语女声"
+      }
+    },
+    {
+      "key": "pt_br-speaker",
+      "display": "葡萄牙语(巴西) 发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV531_streaming": "葡语男声",
+        "pt_female_alice": "葡语女声"
+      }
+    },
+    {
+      "key": "vi-speaker",
+      "display": "越南语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV075_streaming": "越南男声",
+        "tts.other.BV074_streaming": "越南女声"
+      }
+    },
+    {
+      "key": "ms-speaker",
+      "display": "马来语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV092_streaming": "马来女声"
+      }
+    },
+    {
+      "key": "ar-speaker",
+      "display": "阿拉伯语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV570_streaming": "阿语男声"
+      }
+    },
+    {
+      "key": "hi-speaker",
+      "display": "印尼语发音",
+      "type": "select",
+      "options": {
+        "tts.other.BV160_streaming": "印尼男声",
+        "id_female_noor": "印尼女声"
+      }
+    }
   ],
   "language": {
     "zh_cn": "zh_cn",
