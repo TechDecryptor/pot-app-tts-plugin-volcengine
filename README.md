@@ -15,7 +15,7 @@
 
 ## Speaker
 
-### zh-CN | zh-TW
+### Chinese
 
 | Name |      Value     |
 |------|----------------|
@@ -30,7 +30,7 @@
 | 清新女声 | zh_female_qingxin |
 | 少儿故事 | zh_female_story |
 
-### en-US
+### English
 
 | Name |      Value     |
 |------|----------------|
@@ -38,7 +38,7 @@
 | 英式男声 | en_male_bob |
 | 澳洲女声 | en_female_sarah |
 
-### ja-JP
+### Japanese
 
 | Name |      Value     |
 |------|----------------|
