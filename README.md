@@ -1,4 +1,19 @@
-# Pot-App 火山 语音合成插件 (无需配置，直接使用)
+# Pot-App [火山](https://www.volcengine.com/) 语音合成插件 (无需配置，直接使用)
+
+## 支持平台
+
+- [x] Windows
+  - [x] x64 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/x86_64-pc-windows-msvc.zip)
+  - [x] x86 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/i686-pc-windows-msvc.zip)
+  - [x] aarch64 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/aarch64-pc-windows-msvc.zip)
+- [x] Linux
+  - [x] x64 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/x86_64-unknown-linux-gnu.zip)
+  - [x] x86 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/i686-unknown-linux-gnu.zip)
+  - [x] aarch64 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/aarch64-unknown-linux-gnu.zip)
+  - [x] armv7 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/armv7-unknown-linux-gnueabihf.zip)
+- [x] MacOS
+  - [x] x64 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/x86_64-apple-darwin.zip)
+  - [x] aarch64 [下载](https://ghproxy.com/https://github.com/TechDecryptor/pot-app-tts-plugin-volcengine/releases/latest/download/aarch64-apple-darwin.zip)
 
 ## 使用方法
 
