@@ -9,6 +9,26 @@ pub fn tts(
     lang: &str,
     needs: HashMap<String, String>,
 ) -> Result<Value, Box<dyn Error>> {
+    let language = match lang {
+        "zh_cn" => "zh",
+        "zh_tw" => "zh",
+        "en" => "en",
+        "ja" => "jp",
+        "ko" => "kr",
+        "fr" => "fr",
+        "es" => "es",
+        "ru" => "ru",
+        "de" => "de",
+        "it" => "it",
+        "tr" => "tr",
+        "pt_pt" => "pt",
+        "pt_br" => "pt",
+        "vi" => "vi",
+        "ms" => "ms",
+        "ar" => "ar",
+        "hi" => "id",
+        _ => return Err("Language not supported".into()),
+    };
     let client = reqwest::blocking::ClientBuilder::new().build()?;
 
     let url = "https://translate.volcengine.com/crx/tts/v1/";
@@ -20,19 +40,19 @@ pub fn tts(
             "zh_tw" => "zh_male_xiaoming".to_string(),
             "en" => "en_male_adam".to_string(),
             "ja" => "jp_male_satoshi".to_string(),
-            "ko"=> "kr_male_gye".to_string(),
-            "fr"=>"fr_male_enzo".to_string(),
-            "es"=>"es_male_george".to_string(),
-            "ru"=>"tts.other.BV068_streaming".to_string(),
-            "de"=>"de_female_sophie".to_string(),
-            "it"=>"tts.other.BV087_streaming".to_string(),
-            "tr"=>"tts.other.BV083_streaming".to_string(),
-            "pt_pt"=>"pt_female_alice".to_string(),
-            "pt_br"=>"pt_female_alice".to_string(),
-            "vi"=>"tts.other.BV074_streaming".to_string(),
-            "ms"=>"tts.other.BV092_streaming".to_string(),
-            "ar"=>"tts.other.BV570_streaming".to_string(),
-            "hi"=>"id_female_noor".to_string(),
+            "ko" => "kr_male_gye".to_string(),
+            "fr" => "fr_male_enzo".to_string(),
+            "es" => "es_male_george".to_string(),
+            "ru" => "tts.other.BV068_streaming".to_string(),
+            "de" => "de_female_sophie".to_string(),
+            "it" => "tts.other.BV087_streaming".to_string(),
+            "tr" => "tts.other.BV083_streaming".to_string(),
+            "pt_pt" => "pt_female_alice".to_string(),
+            "pt_br" => "pt_female_alice".to_string(),
+            "vi" => "tts.other.BV074_streaming".to_string(),
+            "ms" => "tts.other.BV092_streaming".to_string(),
+            "ar" => "tts.other.BV570_streaming".to_string(),
+            "hi" => "id_female_noor".to_string(),
             _ => return Err("Language not supported".into()),
         },
     };
@@ -44,10 +64,12 @@ pub fn tts(
         .header("sec-fetch-dest", "empty")
         .header("sec-fetch-mode", "cors")
         .header("sec-fetch-site", "none")
+        .header("cookie", "hasUserBehavior=1")
         .header("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36")
         .json(&json!({
             "text": text,
-            "speaker":speaker,
+            "speaker": speaker,
+            "language": language
         }))
         .send()?
         .json()?;
