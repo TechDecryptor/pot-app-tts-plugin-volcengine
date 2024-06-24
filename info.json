@@ -1,5 +1,5 @@
 {
-  "id": "[plugin].com.TechDecryptor.volcengine_tts",
+  "id": "plugin.com.TechDecryptor.volcengine_tts",
   "plugin_type": "tts",
   "icon": "volcengine.svg",
   "display": "火山 TTS",
